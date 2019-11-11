@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Genetic Algo</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="inputs">
+            <div class="inputs_control">
+                <input type="text" id="word" value="Word To Discover">
+                <b>Genes</b>
+                <input type="text" id="alphabet" value="abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOP 
+                QRSTUVWXYZ 1234567890, .-;:_!">
+                <b>Population</b>
+                <input type="number" id="population" value="100">
+                <b>Mutation Probability</b>
+                <input type="number" id="p_m" value="10">
+                <b>Crossover Probability</b>
+                <input type="number" id="p_c" value="90">
+            </div>
+            <button onclick="start()">Start</button>
+        </div>
+        <div class="output">
+            <button onclick="clearResults()">Clear</button>
+            <div class="screen"></div>
+        </div>
+    </main>
+</body>
+<script src="algo.js"></script>
+
+</html>

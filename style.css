@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #011526;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+.inputs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2F7360;
+    align-items: center;
+    font-family: sans-serif;
+    color: #5FD9C2;
+}
+
+.inputs_control {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.inputs_control>input {
+    color: #011526;
+    border: none;
+    height: 3rem;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+}
+
+.inputs_control>* {
+    justify-content: center;
+}
+
+#word {
+    text-align: center;
+    font-size: 3rem;
+    height: 4rem;
+}
+
+.inputs button {
+    background: #2F7360;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 3rem;
+    padding: 0.2em 0.7em;
+    color: #5FD9C2;
+    border: 4px solid #5FD9C2;
+}
+
+.output {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.output button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 95%;
+    background: black;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.screen p {
+    margin: 0px;
+    color: white;
+    font-size: 1.6rem;
+    font-family: serif, "Times New Roman", Times;
+    white-space: pre;
+}
